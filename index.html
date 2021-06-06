@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac Toe</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="resetGame">
+            <button class="reset" onclick="reset()">Restart Game</button>
+        </div>
+        <div class="slots-container" id="slot-container">
+                <div class="slots" id="slot-1" onclick="playerClickedOnSlot(1)"></div>
+                <div class="slots" id="slot-2" onclick="playerClickedOnSlot(2)"></div>
+                <div class="slots" id="slot-3" onclick="playerClickedOnSlot(3)"></div>
+                <div class="slots" id="slot-4" onclick="playerClickedOnSlot(4)"></div>
+                <div class="slots" id="slot-5" onclick="playerClickedOnSlot(5)"></div>
+                <div class="slots" id="slot-6" onclick="playerClickedOnSlot(6)"></div>
+                <div class="slots" id="slot-7" onclick="playerClickedOnSlot(7)"></div>
+                <div class="slots" id="slot-8" onclick="playerClickedOnSlot(8)"></div>
+                <div class="slots" id="slot-9" onclick="playerClickedOnSlot(9)"></div>
+                <span id="warning"></span>
+        </div>
+        <div class="winner" id="winner">
+            
+        </div>
+        <div class="players-container" id="turn">
+            <div class="player" id="player-1" onclick="choosePlayer(1)"><i class="fa fa-times fa-2x"></i></div>
+            <div class="player" id="player-2" onclick="choosePlayer(2)"><i class="fa fa-circle-thin fa-2x"></i></div>
+        </div>
+    </div>
+    <script src="./app.js"></script>    
+</body>
+</html>

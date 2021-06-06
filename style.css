@@ -1,0 +1,123 @@
+body {
+    background-color: currentColor;
+}                                                                             
+.slots-container {
+   margin: auto;
+   width: 450px;
+   height: 450px;
+   padding: 13px;
+   background-color:#0c6f66;
+   position: relative;
+}
+.slots {
+   display: inline-block;
+   width: 140px !important;
+   height: 150px !important;
+   border: 3px solid black;
+   border-top:none ;
+   vertical-align: top;
+   position: relative;
+   cursor: pointer;
+}
+.slots:hover {
+   background-color: rgb(6, 88, 84);
+}
+.fa {
+   margin: 36px;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   color:#673ab7;
+}
+
+.players-container {
+   width: 475px;
+   margin-top: 30px;
+   margin: auto;
+   margin-top: 14px;
+}
+.player {
+   display: inline-block;
+   width: 149px;
+   color: black;
+   text-align: center;
+   padding: 12px 0px;
+   border-radius: 10px;
+   background: wheat;
+   margin-left: 59px;
+   cursor: pointer;
+}
+.player:hover {
+   opacity: 0.2;
+}
+#slot-4,#slot-7 {
+   border-left:none;
+}
+#slot-6,#slot-9 {
+   border-right:none;
+}
+#slot-1{
+   border-left:none;
+}
+#slot-3 {
+   border-right:none;
+}
+#slot-1,#slot-2,#slot-3 {
+   border-top:none;
+}
+#slot-7,#slot-8,#slot-9 {
+   border-bottom:none;
+}
+/* #slot-2,#slot-5,#slot-8,#slot-3,#slot-6,#slot-9 {
+   /* margin-left: -4px; */
+/* } */ 
+.winner {
+   background-color: orange;
+   width: 400px;
+   height: 152px;
+   position: absolute;
+   top: 194px;
+   left: 516px;
+   display: none;
+   text-align: center;
+   font-weight: bold;
+   border-radius: 47px;
+   text-transform: uppercase;
+}
+.winner i {
+   margin-left: 166px;
+}
+.resetGame {
+   width: 150px;
+   margin: auto;
+}
+.reset {
+   padding: 6px;
+   border: 2px solid #270579;
+   background: burlywood;
+   margin: 15px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.reset:hover {
+   opacity: 0.5;
+}
+.player i {
+   position: static;
+   height: 0px;
+   margin: 0px;
+}
+#warning {
+   position: absolute;
+   top: 170px;
+   left: 104px;
+   background: red;
+   font-weight: bolder;
+   /* width: 215px; */
+   /* height: 128px; */
+   text-align: center;
+   padding: 60px;
+   border-radius: 5px;
+   color: bisque;
+   display: none;
+}
